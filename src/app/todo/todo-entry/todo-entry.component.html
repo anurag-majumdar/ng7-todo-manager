@@ -1,0 +1,9 @@
+<section class="todo-entry">
+  <section class="todo-input-section">
+    <input placeholder="What will you do today?" class="txt-todo-input form-control" (keyup.enter)="addTodo()" type="text"
+      [(ngModel)]="todoName" />
+  </section>
+  <section class="btn-add-todo-section">
+    <button type="button" class="btn-add-todo btn btn-primary" (click)="addTodo()"> + </button>
+  </section>
+</section>

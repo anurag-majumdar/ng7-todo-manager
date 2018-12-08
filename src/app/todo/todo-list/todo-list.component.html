@@ -1,0 +1,14 @@
+<ul class="todo-list-items list-group">
+  <li class="todo-list-item list-group-item" *ngFor="let todo of (todosState$ | async)?.todos">
+    <section class="left-align">
+      <section class="todo-item-checkbox">
+        <input type="checkbox" [checked]="todo.isCompleted" (change)="toggleTodo(todo)">
+      </section>
+      <section class="todo-item-name"> {{ todo.name }} </section>
+    </section>
+    <section class="btn-delete-todo-section">
+      <button type="button" class="btn-delete-todo btn-add-todo btn btn-danger" (click)="deleteTodo(todo)"> X
+      </button>
+    </section>
+  </li>
+</ul>

@@ -1,27 +1,29 @@
-# TodoManager
+# Todo Manager
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.1.
+A simple but scalable Todo Application built using Angular 7.1. It has the following features:
 
-## Development server
+* [Angular 7.1](https://angular.io/)
+* [Bootstrap 4.1.3](https://getbootstrap.com/)
+* [@ngrx/store](https://github.com/ngrx/store)
+* [@ngrx/effects](https://github.com/ngrx/effects)
+* The application was broken down into Core and Feature Modules. The feature modules are lazily loaded when user goes to a specific route (currently, the application has 1 feature module: TodoModule).
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Watch it live here: [Todo Manager](https://ng7-todo-manager-84cb6.firebaseapp.com)
 
-## Code scaffolding
+# Installation Guide
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Run the following commands:
 
-## Build
+```
+git clone https://github.com/anurag-majumdar/hacker-news-PWA.git
+cd hacker-news-PWA
+npm install
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+# Development Server
 
-## Running unit tests
+Run `ng serve --aot` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
+# Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
